@@ -45,6 +45,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B4A86432B4C7F0B001F8C97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BB260F42B4C067700D149BA /* ContentView.swift */,
+				6BB261042B4C100B00D149BA /* PeopleView.swift */,
+				6BB261022B4C09BA00D149BA /* EditPersonView.swift */,
+				6BB261082B4C181600D149BA /* EditEventView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B4A86442B4C7F11001F8C97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BB261002B4C06DF00D149BA /* Person.swift */,
+				6BB261062B4C169F00D149BA /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6BB260E62B4C067700D149BA = {
 			isa = PBXGroup;
 			children = (
@@ -66,13 +86,9 @@
 			children = (
 				6BB2610C2B4C38C400D149BA /* Info.plist */,
 				6BB260F22B4C067700D149BA /* FaceFactsApp.swift */,
-				6BB260F42B4C067700D149BA /* ContentView.swift */,
-				6BB261042B4C100B00D149BA /* PeopleView.swift */,
-				6BB261022B4C09BA00D149BA /* EditPersonView.swift */,
-				6BB261082B4C181600D149BA /* EditEventView.swift */,
 				6BB2610A2B4C1DAE00D149BA /* Previewer.swift */,
-				6BB261002B4C06DF00D149BA /* Person.swift */,
-				6BB261062B4C169F00D149BA /* Event.swift */,
+				6B4A86442B4C7F11001F8C97 /* Model */,
+				6B4A86432B4C7F0B001F8C97 /* Views */,
 				6BB260F62B4C067900D149BA /* Assets.xcassets */,
 				6BB260F82B4C067900D149BA /* Preview Content */,
 			);
