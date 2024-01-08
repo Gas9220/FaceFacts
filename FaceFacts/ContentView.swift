@@ -20,7 +20,7 @@ struct ContentView: View {
             PeopleView(searchString: searchText, sortOrder: sortOrder)
                 .navigationTitle("FaceFacts")
                 .navigationDestination(for: Person.self) { person in
-                    EditPersonView(person: person)
+                    EditPersonView(navigationPath: $path, person: person)
                 }
                 .toolbar {
                     Menu("Sort", systemImage: "arrow.up.arrow.down") {

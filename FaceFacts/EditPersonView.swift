@@ -10,6 +10,7 @@ import SwiftData
 
 struct EditPersonView: View {
     @Environment(\.modelContext) var modelContext
+    @Binding var navigationPath: NavigationPath
     @Bindable var person: Person
     @Query(sort: [
         SortDescriptor(\Event.name),
@@ -30,12 +31,14 @@ struct EditPersonView: View {
             Section("Where did you meet them?") {
                 Picker("met at", selection: $person.metAt) {
                     Text("Unknown event")
+                        .tag(Optional<Event>.none)
 
                     if !events.isEmpty {
                         Divider()
 
                         ForEach(events) { event in
                             Text(event.name)
+                                .tag(Optional(event))
                         }
                     }
                 }
@@ -49,11 +52,15 @@ struct EditPersonView: View {
         }
         .navigationTitle("Edit Person")
         .navigationBarTitleDisplayMode(.inline)
+        .navigationDestination(for: Event.self) { event in
+            EditEventView(event: event)
+        }
     }
 
     func addEvent() {
         let event = Event(name: "", location: "")
         modelContext.insert(event)
+        navigationPath.append(event)
     }
 }
 
