@@ -31,6 +31,7 @@
 		6BB261062B4C169F00D149BA /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		6BB261082B4C181600D149BA /* EditEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventView.swift; sourceTree = "<group>"; };
 		6BB2610A2B4C1DAE00D149BA /* Previewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previewer.swift; sourceTree = "<group>"; };
+		6BB2610C2B4C38C400D149BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		6BB260F12B4C067700D149BA /* FaceFacts */ = {
 			isa = PBXGroup;
 			children = (
+				6BB2610C2B4C38C400D149BA /* Info.plist */,
 				6BB260F22B4C067700D149BA /* FaceFactsApp.swift */,
 				6BB260F42B4C067700D149BA /* ContentView.swift */,
 				6BB261042B4C100B00D149BA /* PeopleView.swift */,
@@ -299,6 +301,7 @@
 				DEVELOPMENT_TEAM = A7B95NFWAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FaceFacts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +331,7 @@
 				DEVELOPMENT_TEAM = A7B95NFWAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FaceFacts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
