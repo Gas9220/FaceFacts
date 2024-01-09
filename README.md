@@ -1,5 +1,5 @@
 ## FaceFacts
-This project is a simple demo app developed with Swift, SwiftUI and the new Swift Data framework. The app allow you to save people that you have meet some event.
+This project is a simple demo app developed with Swift, SwiftUI and the new Swift Data framework. The app allow you to save people that you have meet in some event.
 
 ### Docs
 [Swift ](https://www.swift.org/documentation/)
